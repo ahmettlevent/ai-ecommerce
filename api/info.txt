@@ -1,0 +1,17 @@
+# Run mysql
+
+- $ docker run --name bt-mysql -e MYSQL_ROOT_PASSWORD='UQ@sGxOBYit{WJp/c2Ju' -d mysql:latest
+
+# Fixed Needs
+
+sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu bionic main'
+sudo apt update
+sudo apt install -y python-mysqldb mysqlclient MySQL-python
+
+
+# To Run
+- $ python app.python
+
+# For Migrations
+- $ flask db migrate -m "Initial migration." # İnitial Migration
+- $ flask db upgrade
